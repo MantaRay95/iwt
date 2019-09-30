@@ -361,49 +361,49 @@ color: white;
         <a href="readMore.html#jaf" id="jaffna">Jaffna</a>
       </div>
     </div>
+    <form action="reservation.php" method="POST">
+		<div class="res" style="font-size: 20px;"><b>
+		<h1 style="text-align: center; font-size:50px; margin-top: 0px; ">Reservation</h1>
+		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp From:
+		<select name="start" style="width: 25%; height: 40px;">
+				<option value="Kandy">Kandy</option>
+				<option value="Ella">Ella</option>
+				<option value="Matara">Matara</option>
+				<option value="Galle">Galle</option>
+				<option value="Jaffna">Jaffna</option>
+				<option value="Colombo">Colombo</option>
+				<option value="Hatton">Hatton</option>
+				<option value="Badulla">Badulla</option>
+
+		</select>
+
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To:
+		<select name="end" style="width: 25%; height: 40px;" >
+              <option value="Colombo">Colombo</option>
+              <option value="Kandy">Kandy</option>
+              <option value="Ella">Ella</option>
+              <option value="Matara">Matara</option>
+              <option value="Galle">Galle</option>
+              <option value="Jaffna">Jaffna</option>
+              <option value="Hatton">Hatton</option>
+              <option value="Badulla">Badulla</option></p> 
+
+		</select>
+      
+
     
-  <div class="res" style="font-size: 20px;"><b>
-    <h1 style="text-align: center; font-size:50px; margin-top: 0px; ">Reservation</h1>
-    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp From:
-    <select style="width: 25%; height: 40px;">
-            <option value="">Kandy</option>
-            <option value="">Ella</option>
-            <option value="">Matara</option>
-            <option value="">Galle</option>
-            <option value="">Jaffna</option>
-            <option value="">Colombo</option>
-            <option value="">Hatton</option>
-            <option value="">Badulla</option>
-
-      </select>
-
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To:
-      <select style="width: 25%; height: 40px;" >
-              <option value="">Colombo</option>
-              <option value="">Kandy</option>
-              <option value="">Ella</option>
-              <option value="">Matara</option>
-              <option value="">Galle</option>
-              <option value="">Jaffna</option>
-              <option value="">Hatton</option>
-              <option value="">Badulla</option></p> 
-
-       </select>
-      <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Select the class:</h4>
-      <form style="margin-left: 20%;">
-        <input type="radio" name="" value="first" checked> 1st Class<br>
-        <input type="radio" name="" value="second"> 2nd Class<br>
-        <input type="radio" name="" value="third"> 3rd Class<br>  
-        <input type="radio" name="" value="special"> Special Booking<br>
-      </form><br><br>
-
-    <form action="/#">&nbsp&nbsp&nbsp&nbsp&nbsp
-      Date:&nbsp <input type="text" id="dt" class="input" placeholder=" Date" required>&nbsp&nbsp&nbsp&nbsp&nbsp
-      Month:&nbsp <input type="text" id="mon" class="input" placeholder=" Month" required>&nbsp&nbsp&nbsp&nbsp&nbsp
-      Year:&nbsp <input type="text" id="yr" class="input" placeholder=" Year" required>
+	  <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Select the class:</h4>
+	  <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="first" checked> 1st Class<br>
+      <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="second"> 2nd Class<br>
+      <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="third"> 3rd Class<br>  
+      <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="special"> Special Booking<br><br><br>
+	  &nbsp&nbsp&nbsp&nbsp&nbsp
+      Date:&nbsp <input type="text" name="dt" id="dt" class="input" placeholder=" Date" required>&nbsp&nbsp&nbsp&nbsp&nbsp
+      Month:&nbsp <input type="text" name="mon" id="mon" class="input" placeholder=" Month" required>&nbsp&nbsp&nbsp&nbsp&nbsp
+      Year:&nbsp <input type="text" name="yr" id="yr" class="input" placeholder=" Year" required>
       <br><br>
       
-      <center><br>Number of Seats:&nbsp<input type="text" id="st"name"seats" class="input" placeholder=" No of seats" required>
+      <center><br>Number of Seats:&nbsp <input type="text" id="st" name="st" class="input" placeholder=" No of seats" required>
       <br><br><br>
       <button type="submit" onclick="myvalidate()" class="button" style="font-size: 18px; width:100px"> Confirm </button><br><br></center>
       </form>
@@ -490,40 +490,9 @@ color: white;
 
 
 </div><!-- footer-buttom -->
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <p id="demo"></p>
-
-
-
-
-
-
-
-
-
-
 
 
     <script>
