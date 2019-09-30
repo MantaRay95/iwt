@@ -1,0 +1,332 @@
+a{text-decoration: none;}
+
+body{
+
+
+background-color: #c2c2a3;
+	max-width: 1500px;
+min-width: 1500px;
+width: 92%;
+
+}
+
+
+.top-bar{
+
+top: 0;
+position: fixed;
+width:99%;
+background-color: rgba(20,25,35,.90);
+position: fixed;
+padding-right: 3px;
+height: 70px;
+	max-width: 1500px;
+min-width: 1500px;
+
+
+}
+
+.top-bar strong{
+	font-family: head;
+margin-left: 380px;
+
+color: white;
+font-size: 25px;
+}
+.site-search{
+	padding:5px 25px;	
+	margin-top: 10px;
+	margin-right: 65px;
+	float:right;
+	background: white;
+	border-radius: 25px;
+}
+.site-search input{
+	width: 250px;
+	border:0;
+	float: left;
+}
+.site-search button{
+
+	width: 18px;
+	height: 18px;
+	background: url(../img/search.png);
+	border: 0;
+	float: right;
+}
+.top-img{
+
+	background-size: cover;
+	margin-top: -6px;
+	margin-right: -5px;
+
+}
+
+.nav-bar{
+top: 70px;
+position: fixed;
+width:99%;
+background-color: rgba(20,25,35,.90);
+height: 80px;
+padding-right: 3px;
+	max-width: 1500px;
+min-width: 1500px;
+
+
+}
+.nav-bar img{
+	margin-left: 20px;
+}
+.nav-bar:hover{
+	background: black;
+}
+.nav-bar-links{
+
+	float: right;
+}
+.nav-bar-links ul{
+margin-top: 15px;
+margin-right: 60px;
+}
+.nav-bar-links ul li{
+	border-radius: 5px;
+	border: 5px 5px 5px 5px;
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-right: 1px solid white;
+	margin-bottom: 10px;
+
+
+}
+.nav-bar-links ul li:first-child{
+	background: blue;
+}
+.nav-bar-links ul li:hover{
+	background: blue;
+
+}
+.nav-bar-links ul li a{
+
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-right: 10px;
+	letter-spacing: 1px;
+	color: white;
+}
+.top-bar img{
+
+	margin-top: 15px;
+	margin-left: 50px;
+	float: left;
+	border-radius: 4px;
+	position: relative;
+}
+
+
+
+
+.img{
+
+
+
+	height: 40%;
+	width: 100%;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+width: 100%;
+height: 600px;
+}
+
+
+
+/*---------------------------top-section-end--------------------------*/
+
+
+.contact-info h1{
+	font-style: italic;
+	color: #DAA520;
+	
+}
+.phone{
+	border-right: 1px solid #DAA520;
+
+	color: black;
+	float: left;
+	margin-left: 250px;
+	margin-top: 40px;
+	list-style: none;
+	padding-right: 40px;
+}
+.phone h2{
+	text-decoration: underline;
+}
+.phone img{
+
+}
+.location{
+	margin-top: 40px;
+color: black;
+border-right: 1px solid #DAA520;
+	margin-right: 480px;
+	list-style: none;
+
+}
+.location h2{
+	text-decoration: underline;
+}
+.location img{
+
+}
+
+.email{
+color: black;
+	margin-right: 170px;
+	float: right;
+margin-top:-170px;
+	list-style:none;
+
+}
+.email h2{
+	text-decoration: underline;
+}
+.comment-img{
+	margin-top: -8px;
+
+	width: 100%;
+	height: 1400px;
+	background-size: cover;
+	background-attachment: fixed;
+
+border-radius: 10px;
+
+
+
+}
+.comments{
+
+	background-size: cover;
+	height: 1400px;
+
+	text-align: center;
+	border-radius: 10px;
+}
+
+
+
+
+.color-form{
+	background-color: rgba(10,20,30,.5);
+	margin-right: 350px;
+	padding-top: 20px;
+	margin-left: 350px;
+	padding-bottom: 40px;
+}
+
+.comments input{
+	margin-top: 20px;
+	padding: 5px;
+	width: 700px;
+
+}
+.comments textarea{
+	margin-bottom: 80px;
+	margin-top: 20px;
+	width: 700px;
+
+}
+.comments p{
+	font-size: 25px;
+	color: white;
+	font-style: italic;
+
+}
+.comments button{
+	width: 700px;
+	height: 40px;
+}
+.comments button:hover{
+
+	background-color: blue;
+
+
+}
+
+.station-numbers{
+
+width: 100%;
+
+}
+
+.station-numbers label{
+
+font-size: 25px;
+
+
+}
+.station-numbers a{
+	font-size: 20px;
+}
+.station-number-icon{
+	width: 50px;
+	float: left;
+	margin-right: 200px;
+	margin-left: 100px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.station-no2{
+	float: right;
+	margin-top:-210px;
+	margin-right: 40px;
+}
+.colombo a{
+	float: right;
+	margin-right: 700px;
+}
+.station-no2{
+
+float: left;
+margin-left: 600px;
+
+
+}
+.station-no2 a{
+margin-top: 5px;
+float: right;
+margin-left: 10px;
+}
+
+
+/*______________________________FOOTER_________________________________________*/
+
+.btm-bar{
+	margin-top: 10px;
+	
+	width:100%;
+	background-color: black;
+	height: 90px;
+	text-align: center;
+
+}
+
+.bcol1{
+	width: 33%;
+	float: left;
+}
+
+.bcol2{   
+	width: 33%;
+	float: left;
+}
+
+.bcol3{   
+	width: 33%;
+	float: left;
+}
+.btm-bar:hover{
+	background: rgba(20,25,35,.90);
+}

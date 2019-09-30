@@ -1,0 +1,88 @@
+
+
+@font-face{
+	font-family: "newtext";
+	src:url('../fonts/newtext.TTF');/*extrenal fonts --*/
+
+}
+
+
+/*===============================================================================
+		TEXT SLIDE START
+=================================================================================*/
+
+
+.top-img strong{
+
+position: absolute;
+letter-spacing: 6px;
+font-size: 30px;
+color: white;
+margin-top: -480px;
+margin-left: 500px;
+
+
+}
+.top-img span{
+font-weight: bold;
+	color: red;
+	text-shadow: 15px 5px 5px 5px blue;
+margin-left: 150px;
+}
+.top-img span:before{
+
+	content: '';
+	animation: animate infinite 60s;
+}
+@keyframes animate{
+	0%{
+		content: 'Sri Lanka train journey';
+		font-family: newtext;
+
+
+	}
+	20%{
+		content: 'BOOK ALL SL TRAIN TICKETS WITH US';
+		font-family: newtext;
+
+
+	}
+	
+	40%{
+		content: 'DISCOVER SRI LANKA WITH US';
+		font-family: newtext;
+
+	
+	}
+	60%{
+		content: 'WORLD MOST BEAUTIFUL TRAIN TRIPS';
+		font-family: newtext;
+
+
+	}
+	80%{
+		content: 'JOURNY START BETTER WITH SL TRAIN';
+		font-family: newtext;
+
+
+	}
+
+	100%{
+		content: 'MOST SCENIC TRAIN RIDE IN SRI LANKA';
+		font-family: newtext;
+
+	
+	}
+
+}
+.top-img h3{
+
+	letter-spacing: 10px;
+	font-size: 30px;
+	margin-top: 30px;
+	margin-left: 150px;
+	font-family: newtext;
+
+
+
+/*===================================TEXT SLIDE END =====================================
