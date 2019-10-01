@@ -40,7 +40,6 @@ body{
     border: 15px solid rgb(40, 4, 243);
     padding: 50px;
     float: left;
-    position: fixed;
     left: -3px;
     margin-top: 0%;
 }
@@ -51,6 +50,7 @@ body{
     }
 
     #mySidenav a {
+		margin-top: 280px;
         position: absolute;
         left: -80px;
         transition: 0.3s;
