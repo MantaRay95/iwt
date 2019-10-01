@@ -352,7 +352,7 @@ color: white;
 	
 	$conn = OpenCon();
 	
-	$sql = "SELECT * FROM reservation"; 
+	$sql = "SELECT * FROM schedule"; 
 	if ($result=mysqli_query($conn,$sql))
 	{
 		
@@ -360,7 +360,7 @@ color: white;
 		echo "<table>";
 
 		while ($row=mysqli_fetch_assoc($result)){
-			echo "<tr><td>" . $row['start'] . "</td><td>" . $row['end'] . "</td><td>" . $row['class'] . "</td><td>" . $row['year'] . "</td></tr>" ; 
+			echo "<tr><td>" . $row['id'] . "</td><td>" . $row['Start'] . "</td><td>" . $row['STime'] . "</td><td>" . $row['End'] . "</td><td>" . $row['ETime'] . "</td><td>" . $row['Frequency'] . "</td></tr>" ; 
 		}
 
 		echo "</table>";
