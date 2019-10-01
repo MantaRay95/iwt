@@ -367,6 +367,10 @@ color: white;
 	}
 	
 ?>
+<form>
+<a href="Shedule.php"><button>REFRESH</button></a>
+
+</form>
 
 <!--<table>
 	<tr>
