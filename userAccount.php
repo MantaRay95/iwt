@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="reservation.css">
-
-    
-    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="userAccountStyle.css"><br>
+    <link rel="stylesheet" type="text/css" href="topbar.css">
+    <title>User Account</title>
 </head>
-<body>
-  <style type="text/css">
-    
-
-
+<body>  
+<style type="text/css">
+  
 
 .site-search{
   padding:5px 25px; 
@@ -50,13 +44,14 @@
 }
 
 .nav-bar{
-background: linear-gradient(to bottom left, #0000ff -8%, #ffffff 56%);
+margin-top: -25px;
+  background: linear-gradient(to bottom left, #0000ff -8%, #ffffff 56%);
 padding-right: 3px;
 width:100%;
 height: 110px;
 max-width: 1500px;
 min-width: 1500px;
-margin-bottom: 150px;
+margin-bottom: 250px;
 box-shadow: 2px 2px 10px black;
 
 }
@@ -268,11 +263,14 @@ color: white;
 
 
 
-  </style>
 
 
 
-<div class="top-img">
+
+
+
+</style>              
+       <div class="top-img">
 
 <div class="img">
 
@@ -307,12 +305,13 @@ color: white;
     <div class="nav-bar-links">
             
         <ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="reservation.html">RESERVATION</a></li>
-					<li><a href="Shedule.php">SHEDULE</a></li>
-					<li><a href="pro.php">LOG IN</a></li>
-					 <li><a href="userAccount.php">ACCOUNT</a></li>
-					<li><a href="contact-us.php">CONTACT</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="../reserv- redomore-lig-user/reservation.html">Reservation</a></li>
+          <li><a href="../regis-pay-rese/Registration.html">Register</a></li>
+          <li><a href="../website login/pro.html">Log In</a></li>
+           <li><a href="../shed - about/Shedule.html">Shedule</a></li>
+          <li><a href="contact-us.php">contact us</a></li>
+            <li><a href="../shed - about/About us.html">About us</a></li>
 
 
         </ul>
@@ -321,94 +320,52 @@ color: white;
     </div><!--nav-bar-links-->
 
 </div><!--nav-bar-->
-      
-      <!-----------------------------END ------Navigaion ---------bar-------------------------->
-      
-      
+                              
+                              <!-----------------------------END ------Navigaion ---------bar-------------------------->
+             
+                              
 
 
 
 
 
+                              
+        <h1 style="text-align: center; font-size: 60px; margin-top: 12%;"><b>USER ACCOUNT</b></h1>
+
+        <div class="row">
+                <div class="column left" style="background-color:rgb(213, 230, 230);">
+                        <section>
+                                <nav>
+                                    <h3>Legal policies</h3>
+                                  <ul>
+                                    <li><a href="legalPolicies.html">Terms & Policies</a></li>
+                                    <br>
+                                    <li><a href="legalPolicies.html">Data policy</a></li>
+                                    <br>
+                                    <li><a href="legalPolicies.html">Community Standards</a></li>
+                                    <br>
+                                  </ul>
+                                </nav>
+                        </section>  
+                </div>
+                
+                <div class="column right" style="background-color:rgb(3, 17, 16); text-align: center;">
+                        <div style="color: wheat;">
+                                <img src="images/avatar.jpg" width="50" height="60" alt="avtr">
+                                <div><h2>Pamuditha Rasanjana</h2></div>
+                                <div><h5>pamuditha99@gmail.com</h5></div>
+                        </div>
+                        <button class="button">Account Settings</button><br><br>
+                        <button class="button">My Trips</button><br><br>
+                        <button class="button">Payments</button><br><br>
+                        <button class="button">Help & Support</button><br><br>
+                        <button class="button">Log out</button><br>
+                </div>
+        </div>
 
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="new">
-    <div id="mySidenav" class="sidenav">
-        <a href="readMore.html#kan" id="kandy">Kandy</a>
-        <a href="readMore.html#col" id="colombo">Colombo</a>
-        <a href="readMore.html#gal" id="galle">Galle</a>
-        <a href="readMore.html#mat" id="matara">Matara</a>
-        <a href="readMore.html#ell" id="ella">Ella</a>
-        <a href="readMore.html#jaf" id="jaffna">Jaffna</a>
-      </div>
-    </div>
-    <form action="reservation.php" method="POST">
-		<div class="res" style="font-size: 20px;"><b>
-		<h1 style="text-align: center; font-size:50px; margin-top: 0px; ">Reservation</h1>
-		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp From:
-		<select name="start" style="width: 25%; height: 40px;">
-				<option value="Kandy">Kandy</option>
-				<option value="Ella">Ella</option>
-				<option value="Matara">Matara</option>
-				<option value="Galle">Galle</option>
-				<option value="Jaffna">Jaffna</option>
-				<option value="Colombo">Colombo</option>
-				<option value="Hatton">Hatton</option>
-				<option value="Badulla">Badulla</option>
-
-		</select>
-
-		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To:
-		<select name="end" style="width: 25%; height: 40px;" >
-              <option value="Colombo">Colombo</option>
-              <option value="Kandy">Kandy</option>
-              <option value="Ella">Ella</option>
-              <option value="Matara">Matara</option>
-              <option value="Galle">Galle</option>
-              <option value="Jaffna">Jaffna</option>
-              <option value="Hatton">Hatton</option>
-              <option value="Badulla">Badulla</option></p> 
-
-		</select>
-      
-
-    
-	  <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Select the class:</h4>
-	  <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="first" checked> 1st Class<br>
-      <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="second"> 2nd Class<br>
-      <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="third"> 3rd Class<br>  
-      <input style="margin-left: 20%;" type="radio" name="cl" id="cl" value="special"> Special Booking<br><br><br>
-	  &nbsp&nbsp&nbsp&nbsp&nbsp
-      Date:&nbsp <input type="text" name="dt" id="dt" class="input" placeholder=" Date" required>&nbsp&nbsp&nbsp&nbsp&nbsp
-      Month:&nbsp <input type="text" name="mon" id="mon" class="input" placeholder=" Month" required>&nbsp&nbsp&nbsp&nbsp&nbsp
-      Year:&nbsp <input type="text" name="yr" id="yr" class="input" placeholder=" Year" required>
-      <br><br>
-      
-      <center><br>Number of Seats:&nbsp <input type="text" id="st" name="st" class="input" placeholder=" No of seats" required>
-      <br><br><br>
-      <button type="submit" onclick="myvalidate()" class="button" style="font-size: 18px; width:100px"> Confirm </button><br><br>
-	
-      </form>
-    </div></b>
-		
 
 
 <div class="footer">
@@ -487,44 +444,8 @@ color: white;
 
 
 </div><!-- footer-buttom -->
+        
 
-
-    <p id="demo"></p>
-
-
-    <script>
-      function myvalidate(){
-        var dt, mon, yr, st;
-        dt = document.getElementById("dt").value;
-        mon = document.getElementById("mon").value;
-        yr = document.getElementById("yr").value;
-        st = document.getElementById("st").value;
-        if(isNaN(dt)){
-          alert("Date should be a number");
-        }
-        else if(dt<0 || dt>31 || (dt.length != 2)){
-            alert("Date is incorrect");
-        }
-        else if(isNaN(mon)){
-          alert("Month should be a number");
-        }
-        else if(mon<0 || mon>12 || (mon.length != 2)){
-            alert("Month is incorrect");
-        }
-        else if(isNaN(yr)){
-          alert("Year should be a number");
-        }
-        else if(yr<0 || (yr.length != 4)){
-            alert("Year is incorrect");
-        }
-        else if(isNaN(st)){
-          alert("Number of seats should be a number");
-        }
-        else{
-          confirm("Your reservation details will save");
-        }
-      }
-    </script>
-      
+    
 </body>
 </html>

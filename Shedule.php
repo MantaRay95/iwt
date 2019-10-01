@@ -289,14 +289,13 @@ color: white;
 		<div class="nav-bar-links">
 						
 				<ul>
-			  <li><a href="index.html">home</a></li>
-			  <li><a href="pro.html">Reservation</a></li>
-			  <li><a href="Registration.html">Register</a></li>
-			  <li><a href="pro.html">Log In</a></li>
-			  <li><a href="Shedule.html">Shedule</a></li>
-			  <li><a href="contact-us.html">contact us</a></li>
-			  <li><a href="About us.html">About us</a></li>
-			</ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="reservation.html">RESERVATION</a></li>
+					<li><a href="Shedule.php">SHEDULE</a></li>
+					<li><a href="pro.php">LOG IN</a></li>
+					 <li><a href="userAccount.php">ACCOUNT</a></li>
+					<li><a href="contact-us.php">CONTACT</a></li>
+				</ul>
 
 
 		</div><!--nav-bar-links-->
@@ -324,8 +323,8 @@ color: white;
 				<td class="we"><p class="select">Start Station</p></td> 
 				
 				<td class="we">	<center><select name="ss">
-						<option>Place</option> <option>Kandy</option> <option>Colombo</option> <option>AHANGAMA</option> <option>AHUNGALLE</option> 
-						<option>AKBOPURA</option> <option>AKURALA</option> <option>ALAWATUPITIYA</option> <option>ALAWWA</option> 
+						<option>Place</option> <option>COLOMBO FORT</option> <option>JAFFNA</option> <option>KANDY</option> <option>HATTON</option> 
+						<option>MOUNT LAVINIA</option> <option>BANDARAWELA</option> <option>GALLE</option> <option>ELLA</option>
 						</select></center>
 				</td>
 		
@@ -334,8 +333,8 @@ color: white;
 				<td class="we"><p class="select">End Station</p></td>
 				
 				<td class="we">	<center><select name="es">
-						<option>Place</option> <option>Kandy</option> <option>Colombo</option> <option>BANGADENIYA</option> <option>BERUWALA</option> 
-						<option>BOOSSA</option> <option>ASELAPURA</option> <option>GELIOYA</option> <option>GANEMULLA</option> 
+						<option>Place</option> <option>COLOMBO FORT</option> <option>JAFFNA</option> <option>KANDY</option> <option>HATTON</option> 
+						<option>MOUNT LAVINIA</option> <option>BANDARAWELA</option> <option>GALLE</option> <option>ELLA</option>
 						</select></center>
 				</td>
 		</tr>		
@@ -367,8 +366,9 @@ color: white;
 	}
 	
 ?>
-<form>
-<a href="Shedule.php"><button>REFRESH</button></a>
+<br><br>
+<form action="Shedule.php">
+<button class="button">REFRESH</button>
 
 </form>
 

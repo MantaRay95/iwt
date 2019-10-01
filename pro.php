@@ -1,26 +1,20 @@
 
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SL Trainline</title>
-	<link rel="stylesheet" type="text/css" href="style/registration.css"> 
-	
-	<style>
-	.img{
-	background-image: url(images/hitachi-4.jpg);
-	height: 1000px;
-	width: 100%;
-	margin-top:-150px;
-	padding-top: 10px;
-	padding-bottom: 60px;
-	background-size: cover;
-	-webkit-background-size: cover;
-	background-attachment: fixed;
+<title>Train Line</title>
+<link rel="stylesheet" type="text/css" href="style.css"><br>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
 
-}
+
+
+<style type="text/css">
+	
+
 
 
 .site-search{
@@ -58,14 +52,14 @@
 }
 
 .nav-bar{
-margin-top:-1060px;
+margin-top: -20px;
   background: linear-gradient(to bottom left, #0000ff -8%, #ffffff 56%);
 padding-right: 3px;
 width:100%;
 height: 110px;
 max-width: 1500px;
 min-width: 1500px;
-margin-bottom: 250px;
+margin-bottom: 750px;
 box-shadow: 2px 2px 10px black;
 
 }
@@ -131,7 +125,7 @@ color: white;
 
 
 .footer{
-
+	margin-top: 1100px;
 	width: 100%;
 	padding: 100px 0px;
 	height: 200px;
@@ -266,18 +260,17 @@ color: white;
 
 
 
-	body {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #f0f7f2;
-	}
+
+
+
+
+
 
 </style>
 
 
-</head>
-<body>
-	<div class="wrapper">
-		<div class="application">
+
+
 		<div class="top-img">
 
 <div class="img">
@@ -314,12 +307,12 @@ color: white;
 						
 				<ul>
 					<li><a href="index.html">home</a></li>
-					<li><a href="reservation.html">Reservation</a></li>
-					<li><a href="Registration.php">Register</a></li>
-					<li><a href="pro.php">Log In</a></li>
-					 <li><a href="Shedule.html">Shedule</a></li>
-					<li><a href="contact-us.php">contact us</a></li>
-				    <li><a href="About us.html">About us</a></li>
+					<li><a href="../reserv- redomore-lig-user/reservation.html">Reservation</a></li>
+					<li><a href="../regis-pay-rese/Registration.html">Register</a></li>
+					<li><a href="../website login/pro.html">Log In</a></li>
+					 <li><a href="../shed - about/Shedule.html">Shedule</a></li>
+					<li><a href="contact-us.html">contact us</a></li>
+				    <li><a href="../shed - about/About us.html">About us</a></li>
 
 
 				</ul>
@@ -333,71 +326,47 @@ color: white;
 <!-----------------------------END ------Navigaion ---------bar-------------------------->
 
 
-	<div class="img">
-		<div class="apllication-form">
-	<form method="POST" action="Registration connection.php">
-	
-		<div class="reg" >
-			<h1>Create an Account</h1>
-			
-			<p>Please fill in this form to create an account.</p>
-			
-			<hr>
-			<dv class="fname">
-			<label><b>First Name</b></label>
-			<input type="text" placeholder="First Name" name="fname" required>
-			</dv>
-			<br><br>
-			<dv class="lanme">
-			<label><b>Last Name</b></label>
-			<input type="text" placeholder="Last Name" name="lname" required>
-			</dv>
-			<br><br>
-			
-			<dv class="email">
-			<label><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
-			</dv>
-			<br><br>
-			
-			<dv class="pwd">
-			<label><b>Password</b></label>
-			<input id="psswrd" type="password" placeholder="Enter Password" name="psw" required>
-			</dv>
-			<br><br>
-			
-			<dv class="rpwd">
-			<label><b>Repeat</b></label>
-			<input type="password" id="repsswrd" placeholder="Repeat Password" name="rpsw" required>
-			<br>
-			<label><b>Password</b></label>
-			</dv>
-			<br><br><br><br>
-			
-			
-			<label>
-			<input type="checkbox"  id= "cnfm" onclick="enb()" style="margin-bottom:15px"> Remember me
-			</label>
-			<br>
-			
-			<p>By creating an account you agree to our <a href="../reserv- redomore-lig-user/legalPolicies.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-			<div class="button">
-				<a href="index.html"><button type="button" class="cancelbtn">Cancel</button>
-				<a href=""><button type="submit" name="register" id="subb" class="signupbtn" onclick="sub()">Sign Up</button></a>
-				<br><br>
-				 <div class="container signin">
-				<p>Already have an account? <a href="../website login/pro.html" style="color:dodgerblue">Sign in</a>.</p>
-				</div>
+
+
+	<div class= "logbox" style="float"> 
+	<h1 class="h11">LOG IN </h1>
+	<form action="pro connection.php" method="post">
+		<p>User Name<p></br>
+		<input id="username" name="name" type ="text" name"un" placeholder ="User name"></br>
+		<p>Password<p></br>
+		<input id="password" type ="password" name="psw" placeholder ="Password"></br>
+		<input class="sub"type ="submit" value="log in" onclick="validate()"></br>
+		<a href ="#">forgot password</a><br>
+		<a href = "Registration.html">Create account</a><br>
+		
+	</form>
+	<div class = "des">
 	
-			</div>
-		</div>
-  
+		<img src="images/trainicon.png" width = "200" height = "200">
+	
+		<h1>The best price</h1>
+		<h3>Compare trains to find the best option for journey.</h3>
+		
+		<h1>Book and travel easily<h1>
+		<h3>Use our web site to get information about trains</h3>
+		
+		<h1>Pay online</h1>
+		<h3>Pay online using your visa card<h3>
+		
+	
+	
 	</div>
-   		 
-		</form>
-		<div>
-	<div>
+	
+</br>
+</div>
+
+
+
+
+
+
+
 
 <div class="footer">
 	<div class="top-footer">
@@ -475,6 +444,16 @@ color: white;
 
 
 </div><!-- footer-buttom -->
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

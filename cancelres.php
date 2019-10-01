@@ -307,12 +307,13 @@ color: white;
     <div class="nav-bar-links">
             
         <ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="reservation.html">RESERVATION</a></li>
-					<li><a href="Shedule.php">SHEDULE</a></li>
-					<li><a href="pro.php">LOG IN</a></li>
-					 <li><a href="userAccount.php">ACCOUNT</a></li>
-					<li><a href="contact-us.php">CONTACT</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="Registration.html">Register</a></li>
+          <li><a href="pro.html">Log In</a></li>
+           <li><a href="Shedule.html">Shedule</a></li>
+          <li><a href="contact-us.php">contact us</a></li>
+            <li><a href="About us.html">About us</a></li>
 
 
         </ul>
@@ -360,11 +361,17 @@ color: white;
         <a href="readMore.html#jaf" id="jaffna">Jaffna</a>
       </div>
     </div>
+	<form action="?action=load" method="POST">
+		<input type="text" name="id1" id="id1" class="input" placeholder="ID" required>
+		<button type="submit"  class="button" style="font-size: 18px; width:100px"> Load </button>
+	</form>
+	
     <form action="reservation.php" method="POST">
 		<div class="res" style="font-size: 20px;"><b>
-		<h1 style="text-align: center; font-size:50px; margin-top: 0px; ">Reservation</h1>
+		<h1 style="text-align: center; font-size:50px; margin-top: 0px; ">Cancel Reservation</h1>
 		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp From:
 		<select name="start" style="width: 25%; height: 40px;">
+				<option value="empty">....</option>
 				<option value="Kandy">Kandy</option>
 				<option value="Ella">Ella</option>
 				<option value="Matara">Matara</option>
@@ -378,6 +385,7 @@ color: white;
 
 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To:
 		<select name="end" style="width: 25%; height: 40px;" >
+			  <option value="empty">...</option>
               <option value="Colombo">Colombo</option>
               <option value="Kandy">Kandy</option>
               <option value="Ella">Ella</option>
@@ -404,11 +412,14 @@ color: white;
       
       <center><br>Number of Seats:&nbsp <input type="text" id="st" name="st" class="input" placeholder=" No of seats" required>
       <br><br><br>
-      <button type="submit" onclick="myvalidate()" class="button" style="font-size: 18px; width:100px"> Confirm </button><br><br>
+      <button type="submit" onclick="myvalidate()" class="button" style="font-size: 18px; width:100px"> Delete Reservation </button><br><br>
 	
       </form>
     </div></b>
 		
+
+
+
 
 
 <div class="footer">
@@ -528,3 +539,35 @@ color: white;
       
 </body>
 </html>
+
+
+<?php
+
+	function load(){
+		
+		include 'mycon.php';
+		
+		$conn = OpenCon();
+
+		$SeatNo = filter_input(INPUT_POST, 'id1');
+		
+		$sql = "SELECT * FROM reservation where res_id='id1'"; 
+		if ($result=mysqli_query($conn,$sql))
+		{
+			$SeatNo = $row['start'];
+			$from = $row['end'];
+			$to = $row['class'];
+			$class_type = $row['date'];
+			$date = $row['month'];
+			$month = $row['year'];
+			$year = $row['no_of_seats'];
+			
+			echo "dt.placeholder = '$SeatNo'";
+		}
+		else
+		{
+			echo "Error id";
+		}
+		CloseCon($conn);
+	}
+?>

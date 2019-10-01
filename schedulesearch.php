@@ -318,13 +318,14 @@ color: white;
 <p id="select2">Select your start Station and End Station *</p>
 
 </center>
+<form action="schedulesearch.php" method="POST">
 <table>
 		<tr>
 				<td class="we"><p class="select">Start Station</p></td> 
 				
 				<td class="we">	<center><select name="ss">
-						<option>Place</option> <option>Kandy</option> <option>Colombo</option> <option>AHANGAMA</option> <option>AHUNGALLE</option> 
-						<option>AKBOPURA</option> <option>AKURALA</option> <option>ALAWATUPITIYA</option> <option>ALAWWA</option> 
+						<option>Place</option> <option>COLOMBO FORT</option> <option>JAFFNA</option> <option>KANDY</option> <option>HATTON</option> 
+						<option>MOUNT LAVINIA</option> <option>BANDARAWELA</option> <option>GALLE</option> <option>ELLA</option>
 						</select></center>
 				</td>
 		
@@ -332,14 +333,14 @@ color: white;
 				
 				<td class="we"><p class="select">End Station</p></td>
 				
-				<td class="we">	<center><select name="ss">
-						<option>Place</option> <option>Kandy</option> <option>Colombo</option> <option>BANGADENIYA</option> <option>BERUWALA</option> 
-						<option>BOOSSA</option> <option>ASELAPURA</option> <option>GELIOYA</option> <option>GANEMULLA</option> 
+				<td class="we">	<center><select name="es">
+						<option>Place</option> <option>COLOMBO FORT</option> <option>JAFFNA</option> <option>KANDY</option> <option>HATTON</option> 
+						<option>MOUNT LAVINIA</option> <option>BANDARAWELA</option> <option>GALLE</option> <option>ELLA</option>
 						</select></center>
 				</td>
 		</tr>		
 </table>
-<form action="schedulesearch.php" method="POST">
+
 	<button class="button" onclick="myfunction()">Search</button>
 </form>
 <p id="demo"></p>
@@ -354,7 +355,7 @@ color: white;
 	$stl = filter_input(INPUT_POST, 'ss');
 	$edl = filter_input(INPUT_POST, 'es');
 	
-	$sql = "SELECT * FROM reservation where start='$stl' AND end='$edl'"; 
+	$sql = "SELECT * FROM schedule where start='$stl' AND end='$edl'"; 
 	if ($result=mysqli_query($conn,$sql))
 	{
 		
@@ -362,13 +363,18 @@ color: white;
 		echo "<table>";
 
 		while ($row=mysqli_fetch_assoc($result)){
-			echo "<tr><td>" . $row['start'] . "</td><td>" . $row['end'] . "</td><td>" . $row['class'] . "</td><td>" . $row['year'] . "</td></tr>" ; 
+			echo "<tr><td>" . $row['id'] . "</td><td>" . $row['Start'] . "</td><td>" . $row['STime'] . "</td><td>" . $row['End'] . "</td><td>" . $row['ETime'] . "</td><td>" . $row['Frequency'] . "</td></tr>" ; 
 		}
 
 		echo "</table>";
 	}
 	
 ?>
+<br><br>
+<form action="Shedule.php">
+<button class="button">REFRESH</button>
+
+</form>
 
 <!--<table>
 	<tr>

@@ -1,12 +1,18 @@
+
 function sub(){
 var psswrd=document.getElementById("psswrd").value;//used to take the user inputed value
 var repsswrd=document.getElementById("repsswrd").value;
-if(psswrd==repsswrd)
+
+  if(psswrd===repsswrd)
 {
 alert("password is Correct..");
 return true;
 
 }
+else if (psswrd==NULL){
+		alert("Password required")
+	}
+	
 else
 {
 alert("Password Missmatched...");

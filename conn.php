@@ -25,10 +25,11 @@ if (mysqli_connect_error()) {
 else{
 	$sql ="INSERT INTO comment(Name,Email,Comments) values('$username','$email','$comm')";
 
+			header("location:contact-us.php");
 
 if($conn->query($sql)){
 
-	//echo "new record is insert";
+	echo "<br>"."Your massege was submitted. Thanks for your cooperation";
 }
 else{
 	echo "Error :".$sql."<br>".$conn->error;
