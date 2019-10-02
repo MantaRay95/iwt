@@ -5,7 +5,7 @@
 	$host = "localhost";
 			$dbusername ="root";
 			$dbpassword = "";
-			$dbname = "train_reservation";
+			$dbname = "iwt";
 
 
 
@@ -26,13 +26,19 @@ $result = mysqli_query($conn,$sql);
 
 $row=mysqli_fetch_assoc($result);
 
-
+$url = 'index -user.html';
+//$url .= '?email='.$Email.'';
 
 if ($row['email']== $Email && $row['password'] == $password){
 	# code...
-
+	$cookie_name = "email";
+	setcookie($cookie_name, $Email, time() + (86400 * 30), "/"); // 86400 = 1 day
 //	echo "login success".$row['email'];
-			header("location:index -user.html");
+	echo "<script>
+		alert('Login Successful');
+		window.location.href='$url';
+		</script>";
+		
 
 }
 
@@ -40,10 +46,10 @@ if ($row['email']== $Email && $row['password'] == $password){
 
 else
 {
-
-
-echo "login failed";
-		header("location:pro.php");
+	echo "<script>
+		alert('Login Failed');
+		window.location.href='pro.php';
+		</script>";
 
 }
 

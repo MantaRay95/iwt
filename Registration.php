@@ -314,7 +314,6 @@ color: white;
 						
 				<ul>
 					<li><a href="index.html">home</a></li>
-					<li><a href="reservation.html">Reservation</a></li>
 					<li><a href="Registration.php">Register</a></li>
 					<li><a href="pro.php">Log In</a></li>
 					 <li><a href="Shedule.html">Shedule</a></li>
@@ -414,7 +413,7 @@ color: white;
 	<div class="social-icons">
 		
 		<ul>
-			<li><a href="#"><img src="img/Social/facebook-icon.png"></a></li>
+			<li><a href="https://www.facebook.com/SLRJournal/"><img src="img/Social/facebook-icon.png"></a></li>
 			<li><a href="#"><img src="img/Social/google-plus-icon.png"></a></li>
 			<li><a href="#"><img src="img/Social/linkedin-icon.png"></a></li>
 			<li><a href="#"><img src="img/Social/pinterest-icon.png"></a></li>

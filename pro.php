@@ -13,7 +13,7 @@
 
 
 <style type="text/css">
-	
+	*{text-decoration: none;}
 
 
 
@@ -307,12 +307,11 @@ color: white;
 						
 				<ul>
 					<li><a href="index.html">home</a></li>
-					<li><a href="../reserv- redomore-lig-user/reservation.html">Reservation</a></li>
-					<li><a href="../regis-pay-rese/Registration.html">Register</a></li>
-					<li><a href="../website login/pro.html">Log In</a></li>
-					 <li><a href="../shed - about/Shedule.html">Shedule</a></li>
-					<li><a href="contact-us.html">contact us</a></li>
-				    <li><a href="../shed - about/About us.html">About us</a></li>
+					<li><a href="Registration.php">Register</a></li>
+					<li><a href="pro.php">Log In</a></li>
+					 <li><a href="#">Shedule</a></li>
+					<li><a href="contact-us.php">contact us</a></li>
+				    <li><a href="#">About us</a></li>
 
 
 				</ul>
@@ -333,7 +332,7 @@ color: white;
 	<h1 class="h11">LOG IN </h1>
 	<form action="pro connection.php" method="post">
 		<p>User Name<p></br>
-		<input id="username" name="name" type ="text" name"un" placeholder ="User name"></br>
+		<input id="username" name="name" type ="text" placeholder ="User name"></br>
 		<p>Password<p></br>
 		<input id="password" type ="password" name="psw" placeholder ="Password"></br>
 		<input class="sub"type ="submit" value="log in" onclick="validate()"></br>

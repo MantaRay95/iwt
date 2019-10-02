@@ -10,8 +10,9 @@
 	$date = filter_input(INPUT_POST, 'dt');
 	$month = filter_input(INPUT_POST, 'mon');
 	$year = filter_input(INPUT_POST, 'yr');
+	$mail = $_COOKIE["email"];
 	
-	$sql ="INSERT INTO reservation(no_of_seat,start,end,class,date,month,year) values('$SeatNo','$from','$to','$class_type','$date','$month','$year')";
+	$sql ="INSERT INTO reservation(no_of_seat,start,end,class,date,month,year,email) values('$SeatNo','$from','$to','$class_type','$date','$month','$year','$mail')";
 
 	if($conn->query($sql)){
 		

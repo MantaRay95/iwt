@@ -310,9 +310,9 @@ color: white;
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="reservation.html">RESERVATION</a></li>
 					<li><a href="Shedule.php">SHEDULE</a></li>
-					<li><a href="pro.php">LOG IN</a></li>
-					 <li><a href="userAccount.php">ACCOUNT</a></li>
-					<li><a href="contact-us.php">CONTACT</a></li>
+					<li><a href="logout.php">LOG OUT</a></li>
+					<li><a href="contact-us.php">contact us</a></li>
+            <li><a href="About us.html">About us</a></li>
 
 
         </ul>
@@ -401,12 +401,13 @@ color: white;
       Month:&nbsp <input type="text" name="mon" id="mon" class="input" placeholder=" Month" required>&nbsp&nbsp&nbsp&nbsp&nbsp
       Year:&nbsp <input type="text" name="yr" id="yr" class="input" placeholder=" Year" required>
       <br><br>
-      
+      <input type="hidden" name="em" id="em" value="nime@gmail.com">
       <center><br>Number of Seats:&nbsp <input type="text" id="st" name="st" class="input" placeholder=" No of seats" required>
       <br><br><br>
       <button type="submit" onclick="myvalidate()" class="button" style="font-size: 18px; width:100px"> Confirm </button><br><br>
+		
+	</form>
 	
-      </form>
     </div></b>
 		
 
@@ -502,19 +503,19 @@ color: white;
         if(isNaN(dt)){
           alert("Date should be a number");
         }
-        else if(dt<0 || dt>31 || (dt.length != 2)){
+        else if(dt<1 || dt>31 || (dt.length > 2)){
             alert("Date is incorrect");
         }
         else if(isNaN(mon)){
           alert("Month should be a number");
         }
-        else if(mon<0 || mon>12 || (mon.length != 2)){
+        else if(mon<1 || mon>12 || (mon.length > 2)){
             alert("Month is incorrect");
         }
         else if(isNaN(yr)){
           alert("Year should be a number");
         }
-        else if(yr<0 || (yr.length != 4)){
+        else if(yr<1 || (yr.length != 4)){
             alert("Year is incorrect");
         }
         else if(isNaN(st)){

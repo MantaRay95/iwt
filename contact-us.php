@@ -517,12 +517,11 @@ color: white;
             
         <ul>
           <li><a href="index.html">home</a></li>
-          <li><a href="reservation.html">Reservation</a></li>
-          <li><a href="Registration.html">Register</a></li>
-          <li><a href="pro.html">Log In</a></li>
-           <li><a href="Shedule.html">Shedule</a></li>
+          <li><a href="Registration.php">Register</a></li>
+          <li><a href="pro.php">Log In</a></li>
+           <li><a href="#">Shedule</a></li>
           <li><a href="contact-us.php">contact us</a></li>
-            <li><a href="About us.html">About us</a></li>
+            <li><a href="#">About us</a></li>
 
 
         </ul>

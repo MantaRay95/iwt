@@ -293,8 +293,8 @@ color: white;
 					<li><a href="reservation.html">RESERVATION</a></li>
 					<li><a href="Shedule.php">SHEDULE</a></li>
 					<li><a href="pro.php">LOG IN</a></li>
-					 <li><a href="userAccount.php">ACCOUNT</a></li>
-					<li><a href="contact-us.php">CONTACT</a></li>
+					<li><a href="contact-us.php">contact us</a></li>
+            <li><a href="About us.html">About us</a></li>
 				</ul>
 
 
@@ -351,13 +351,14 @@ color: white;
 	
 	$conn = OpenCon();
 	
+	
 	$sql = "SELECT * FROM schedule"; 
 	if ($result=mysqli_query($conn,$sql))
 	{
 		
 
 		echo "<table>";
-
+		
 		while ($row=mysqli_fetch_assoc($result)){
 			echo "<tr><td>" . $row['id'] . "</td><td>" . $row['Start'] . "</td><td>" . $row['STime'] . "</td><td>" . $row['End'] . "</td><td>" . $row['ETime'] . "</td><td>" . $row['Frequency'] . "</td></tr>" ; 
 		}
